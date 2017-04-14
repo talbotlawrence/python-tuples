@@ -1,19 +1,22 @@
-zoo = ('wolf','tiger','cottonmouth')
+zoo = ('wolf','tiger','cottonmouth','monkey')
 print(zoo.index('cottonmouth'))
 
 for animal in zoo:
 	if animal is 'monkey':
 		print("I've found a monkey!!")
 
-(lizard, fox, mammoth) = zoo
-print(lizard)
+if 'monkey' in zoo:
+	print("I've found a monkey again!!")
 
-zoo = list(zoo)
-print(type(zoo))
+# (lizard, fox, mammoth) = zoo 	#does this work?
+# print(zoo)
 
-zoo.extend(['python','elephant','lion'])
-print(zoo)
+my_zoo = list(zoo)
+print(type(zoo), my_zoo)
 
-zoo = tuple(zoo)
+my_zoo.extend(['python','elephant','lion'])
+print(my_zoo)
+
+zoo = tuple(my_zoo)
 print(type(zoo))
 print(zoo)
